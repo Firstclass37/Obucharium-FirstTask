@@ -31,8 +31,8 @@ namespace FirstTask
             Random rand = new Random();
             for (int i = 0; i < 100; i++)
             {
-                int x = rand.Next(0, group.Count - 1);
-                int y = rand.Next(0, group.Count - 1);
+                int x = rand.Next(0, group.Count);
+                int y = rand.Next(0, group.Count);
                 string temp = group[x];
                 group[x] = group[y];
                 group[y] = temp; 
